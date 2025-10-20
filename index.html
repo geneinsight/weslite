@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>WESlite: Gene Insights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1 class="main-title">WESlite: Gene Insights</h1>
+    <div class="lang-switch">
+        <button onclick="switchLang('cn')">中文</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="assets/hero_image.png" alt="WESlite Gene Processing" class="hero-img">
+    </section>
+
+    <section id="intro-cn" class="lang-section">
+        <h2>关于项目</h2>
+        <p>随着基因检测技术的发展，越来越多的人可以透过基因检测预测或评估个体的健康状况。
+        WESlite 可为个体、医生、研究人员、政府及医疗机构提供辅助科研、分析工具和评估报告。
+        帮助提高个体生活质量，降低医疗成本。</p>
+    </section>
+    <section id="intro-en" class="lang-section" style="display:none;">
+        <h2>About the Project</h2>
+        <p>With the advancement of gene testing technologies, more people can predict or assess individual health status through genomics.
+        WESlite provides researchers, clinicians, government agencies, and medical institutions with auxiliary research tools, analytics, and evaluation reports.
+        It helps improve individual quality of life and reduce medical costs.</p>
+    </section>
+
+    <section class="charts">
+        <h2>Gene Analysis Results (V5.7)</h2>
+        <div class="chart-grid">
+            <img src="assets/v5_7_genes/gene_chart1.png" alt="Gene Chart 1">
+            <img src="assets/v5_7_genes/gene_chart2.png" alt="Gene Chart 2">
+            <img src="assets/v5_7_genes/gene_chart3.png" alt="Gene Chart 3">
+            <img src="assets/v5_7_genes/gene_chart4.png" alt="Gene Chart 4">
+            <img src="assets/v5_7_genes/gene_chart5.png" alt="Gene Chart 5">
+            <img src="assets/v5_7_genes/gene_chart6.png" alt="Gene Chart 6">
+            <img src="assets/v5_7_genes/gene_chart7.png" alt="Gene Chart 7">
+            <img src="assets/v5_7_genes/gene_chart8.png" alt="Gene Chart 8">
+            <img src="assets/v5_7_genes/gene_chart9.png" alt="Gene Chart 9">
+            <img src="assets/v5_7_genes/gene_chart10.png" alt="Gene Chart 10">
+            <img src="assets/v5_7_genes/gene_chart11.png" alt="Gene Chart 11">
+            <img src="assets/v5_7_genes/gene_chart12.png" alt="Gene Chart 12">
+            <img src="assets/v5_7_genes/gene_chart13.png" alt="Gene Chart 13">
+            <img src="assets/v5_7_genes/gene_chart14.png" alt="Gene Chart 14">
+            <img src="assets/v5_7_genes/gene_chart15.png" alt="Gene Chart 15">
+            <img src="assets/v5_7_genes/gene_chart16.png" alt="Gene Chart 16">
+            <img src="assets/v5_7_genes/gene_chart17.png" alt="Gene Chart 17">
+            <img src="assets/v5_7_genes/gene_chart18.png" alt="Gene Chart 18">
+            <img src="assets/v5_7_genes/gene_chart19.png" alt="Gene Chart 19">
+            <img src="assets/v5_7_genes/gene_chart20.png" alt="Gene Chart 20">
+            
+        </div>
+    </section>
+
+    <section class="charts">
+        <h2>Disease Analysis</h2>
+        <div class="chart-grid">
+            <img src="assets/disease_charts/top20_genes.png" alt="Top 20 Genes">
+            <img src="assets/disease_charts/top20_diseases.png" alt="Top 20 Diseases">
+        </div>
+    </section>
+
+    <section class="trial-info">
+        <p id="trial-cn">您可尝试申请 <strong>免费试用</strong>，我们将在资源允许的情况下予以支持。</p>
+        <p id="trial-en" style="display:none;">You can apply for a <strong>free trial</strong>. We will support it when resources allow.</p>
+    </section>
+
+    <section class="about-us">
+        <h2 id="about-cn">关于我们</h2>
+        <p id="about-text-cn">WESlite是一个活跃在加拿大-中国的科研团队，隶属于西湖科技有限公司（Westlake Science & Technology Limited）。
+        主要承接医疗、大数据、遥感等相关项目的开发、定制与研究。</p>
+
+        <h2 id="about-en" style="display:none;">About Us</h2>
+        <p id="about-text-en" style="display:none;">WESlite are an active research team in Canada and China, affiliated with Westlake Science & Technology Limited.
+        We mainly undertake development, customization, and research projects related to healthcare, big data, and remote sensing.</p>
+    </section>
+
+    <!-- 联系方式区块 -->
+    <section class="contact-us">
+        <h2 id="contact-cn">联系我们</h2>
+        <p id="contact-text-cn">
+            邮箱: aaronwangwlst@gmail.com <br>
+            电话: +1 604-655-2905 <br>
+            Facebook: WESliteTeam
+        </p>
+        
+    </section>
+
+        <h2 id="contact-en" style="display:none;">Contact Us</h2>
+        <p id="contact-text-en" style="display:none;">
+            Email: aaronwangwlst@gmail.com <br>
+            Facebook: WESliteTeam                    <br>
+            Phone: +1 123-456-7890 <br>
+        <div style="margin-top: 15px;">
+            <strong>Wechat:</strong><br>
+            <img src="assets/wechat.jpg" alt="微信二维码" style="width: 150px; height: auto; border: 1px solid #ccc; padding: 5px;">
+        </div> 
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 WESlite. All rights reserved.</p>
+</footer>
+
+<script>
+function switchLang(lang) {
+    const cn = document.querySelectorAll(
+        '#intro-cn, #trial-cn, #about-cn, #about-text-cn, #contact-cn, #contact-text-cn'
+    );
+    const en = document.querySelectorAll(
+        '#intro-en, #trial-en, #about-en, #about-text-en, #contact-en, #contact-text-en'
+    );
+    if(lang === 'cn'){
+        cn.forEach(el => el.style.display='block');
+        en.forEach(el => el.style.display='none');
+    } else {
+        cn.forEach(el => el.style.display='none');
+        en.forEach(el => el.style.display='block');
+    }
+}
+</script>
+</body>
+</html>
